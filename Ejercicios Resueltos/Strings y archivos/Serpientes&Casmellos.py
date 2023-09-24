@@ -3,9 +3,7 @@ def convertirSerpienteaCamello(cadena):
     valorConvertido = ""
     for value in cadenaDividida:
         if len(value):
-            # print(f"{value[0:1]} | {value[1:len(value)]}")
-            valorConvertido += value[0:1].upper()
-            valorConvertido += value[1 : len(value)].lower()
+            valorConvertido += f"{value[0:1].upper()}{value[1:len(value)].lower()}"
     print(valorConvertido)
 
 
